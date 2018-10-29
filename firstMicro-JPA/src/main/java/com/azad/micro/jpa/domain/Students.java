@@ -14,6 +14,13 @@ public class Students {
 	private String fullName;
 	private String address;
 	private Integer age;
+	
+	public Students(String fullName, String address, Integer age) {
+		super();
+		this.fullName = fullName;
+		this.address = address;
+		this.age = age;
+	}
 
 	public Integer getStudentId() {
 		return studentId;

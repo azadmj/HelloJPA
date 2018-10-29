@@ -19,4 +19,10 @@ public class StudentsController {
 	public List<Students> getAllStudents() {
 		return studentRepo.findAll();
 	}
+	
+	@GetMapping("/saveStudent")
+	public Students saveStudent() {
+		Students st = new Students("Azad MJ", "INDIA", 21);
+		return studentRepo.save(st);
+	}
 }
