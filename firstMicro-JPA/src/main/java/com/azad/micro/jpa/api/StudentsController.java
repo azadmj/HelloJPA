@@ -25,4 +25,10 @@ public class StudentsController {
 		Students st = new Students("Azad MJ", "INDIA", 21);
 		return studentRepo.save(st);
 	}
+	
+	@GetMapping("/saveStudentWithParam")
+	public Students saveStudentAPI(String name, String address, Integer age) {
+		Students st = new Students(name, address, age);
+		return studentRepo.save(st);
+	}
 }
